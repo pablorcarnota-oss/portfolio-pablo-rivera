@@ -347,7 +347,20 @@ h2::after {
 
 .about-content {
   display: grid;
-  gap: 1.25rem;
+  gap: 3rem;
+  align-items: center;
+  grid-template-columns: minmax(220px, 0.35fr) 1fr;
+}
+
+.about-image img {
+  width: 100%;
+  max-width: 320px;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  aspect-ratio: 3/4;
+  object-fit: cover;
+  display: block;
 }
 
 .pill-row {
@@ -366,7 +379,7 @@ h2::after {
 }
 
 .grid {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
 }
 
 .skills-wrapper {
@@ -511,8 +524,15 @@ h2::after {
   .hero-layout,
   .timeline,
   .grid,
-  .skills {
+  .skills,
+  .about-content {
     grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .about-image {
+    display: flex;
+    justify-content: center;
   }
 
   .hero-copy::before {
