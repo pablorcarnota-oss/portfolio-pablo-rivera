@@ -1,17 +1,17 @@
  :root {
-  --bg: #1a1410;
-  --bg-alt: #0f0b08;
-  --surface: rgba(35, 30, 26, 0.88);
-  --surface-strong: #2a2620;
-  --text: #f0ebe4;
-  --muted: #a89f96;
-  --accent: #d95b34;
-  --accent-deep: #a73d1c;
-  --accent-soft: #ffd7c8;
-  --teal: #4a9b9f;
-  --line: rgba(255, 255, 255, 0.08);
-  --shadow: 0 22px 45px rgba(0, 0, 0, 0.38);
-  --shadow-soft: 0 10px 22px rgba(0, 0, 0, 0.25);
+  --bg: #0d0d0d;
+  --bg-alt: #1a1a1a;
+  --surface: rgba(30, 30, 30, 0.92);
+  --surface-strong: #262626;
+  --text: #ffffff;
+  --muted: #d0d0d0;
+  --accent: #e63946;
+  --accent-deep: #a71930;
+  --accent-soft: #ffb3b8;
+  --teal: #5a7c8f;
+  --line: rgba(230, 57, 70, 0.15);
+  --shadow: 0 22px 45px rgba(0, 0, 0, 0.5);
+  --shadow-soft: 0 10px 22px rgba(0, 0, 0, 0.3);
   --radius: 18px;
   --radius-sm: 12px;
 }
@@ -30,8 +30,8 @@ body {
   color: var(--text);
   line-height: 1.68;
   background:
-    radial-gradient(circle at top right, rgba(46, 111, 115, 0.12), transparent 24%),
-    radial-gradient(circle at top left, rgba(217, 91, 52, 0.12), transparent 20%),
+    radial-gradient(circle at top right, rgba(230, 57, 70, 0.15), transparent 28%),
+    radial-gradient(circle at bottom left, rgba(230, 57, 70, 0.08), transparent 32%),
     var(--bg);
 }
 
@@ -264,8 +264,8 @@ h1 {
   position: relative;
   padding: 1.6rem;
   border-radius: 28px;
-  background: linear-gradient(160deg, #173042 0%, #203c52 100%);
-  color: #f7efe4;
+  background: linear-gradient(160deg, #2d1b1f 0%, #3d1c26 100%);
+  color: #ffffff;
   box-shadow: var(--shadow);
   overflow: hidden;
 }
@@ -277,7 +277,7 @@ h1 {
   width: 180px;
   height: 180px;
   border-radius: 50%;
-  background: radial-gradient(circle, rgba(255, 215, 200, 0.3), transparent 70%);
+  background: radial-gradient(circle, rgba(230, 57, 70, 0.25), transparent 70%);
 }
 
 .panel-label {
@@ -315,7 +315,7 @@ h1 {
 }
 
 .section-alt {
-  background: linear-gradient(180deg, rgba(35, 30, 26, 0.8), rgba(45, 38, 32, 0.5));
+  background: linear-gradient(180deg, rgba(26, 26, 26, 0.9), rgba(38, 25, 25, 0.6));
   border-top: 1px solid var(--line);
   border-bottom: 1px solid var(--line);
 }
